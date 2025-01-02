@@ -1,0 +1,33 @@
+[user]
+    email =
+    name =
+
+[core]
+        editor = vim
+[alias]
+        st = status --column
+        br = branch
+        co = checkout
+        ld = log --decorate --stat
+        lf = log -p
+        lg = log --oneline --graph --decorate
+        lp = log --color --pretty=format:'%Cred%h%Creset -%C(blue)<%an>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) ' --abbrev-commit
+        m = ls-files -m
+        stu = status -uno
+        diffst = diff --staged
+        pushh = "!git push origin HEAD:refs/for/$(git rev-parse --abbrev-ref HEAD)"
+
+[color]
+        ui = true
+
+#[color "diff"]
+#        meta = yellow bold
+#        frag = magenta bold
+#        old = red bold
+#        new = green bold
+#        whitespace = red reverse
+
+[gerrit]
+	createchangeid = true
+[init]
+	templatedir = /home/fedora/RCP/FHGW/git_templates
