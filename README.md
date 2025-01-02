@@ -1,2 +1,3 @@
 # dotfiles
-personalised dot files
+
+Personalised dot files
